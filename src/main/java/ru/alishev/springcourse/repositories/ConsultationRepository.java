@@ -2,12 +2,12 @@ package ru.alishev.springcourse.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import ru.alishev.springcourse.models.Person;
+import ru.alishev.springcourse.models.Consultation;
 
 import java.util.Optional;
 
 @Repository
-public interface PeopleRepository extends JpaRepository<Person, Integer> {
-    Optional<Person> findByName(String name);
+public interface ConsultationRepository extends JpaRepository<Consultation, Integer> {
+
 
 }
